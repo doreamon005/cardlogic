@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CardLogic - Game</title>
+  <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+  <header class="game-header">
+    <h1>CardLogic</h1>
+    <p class="subtitle">Match all pairs to master your memory!</p>
+  </header>
+
+  <main>
+    <div class="controls">
+      <label for="cardCount">Select Number of Cards:</label>
+      <select id="cardCount">
+        <option value="4">4 Cards (2 Pairs)</option>
+        <option value="8" selected>8 Cards (4 Pairs)</option>
+        <option value="12">12 Cards (6 Pairs)</option>
+        <option value="16">16 Cards (8 Pairs)</option>
+      </select>
+      <button id="startGameBtn">Start Game</button>
+      <button id="restartBtn">Restart Game</button>
+      <p>Moves: <span id="moveCount">0</span></p>
+    </div>
+
+    <div class="game-board" id="gameBoard">
+      <!-- Cards will be dynamically added here -->
+    </div>
+  </main>
+
+  <footer>
+    <p>Need help? <a href="contact.html">Contact Us</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
